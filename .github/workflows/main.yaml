@@ -15,7 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-        working-directory: ./app 
+          cache: npm
+          cache-dependency-path: app/node_modules
       - run: npm install express
       - run: npm install
       - run: npm run test
