@@ -47,6 +47,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: elvisvukesu/node-app:${{ env.GITHUB_RUN_NUMBER }}
+          tags: elvisvukesu/node-app:1.0.0
 
 
