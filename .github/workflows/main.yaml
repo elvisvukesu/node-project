@@ -6,7 +6,8 @@ on:
     branches: [ master ]
   
   workflow_dispatch:
-
+env: 
+ Version: $GITHUB_RUN_NUMBER
 defaults:
   run:
     working-directory: app 
@@ -44,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: elvisvukesu/node-app:$GITHUB_RUN_NUMBER
+          tags: elvisvukesu/node-app:
 
 
