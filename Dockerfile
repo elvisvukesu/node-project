@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:fermium-alpine3.15
 ENV NODE_ENV=prod
 RUN mkdir -p /opt/app
 COPY app/* /opt/app
