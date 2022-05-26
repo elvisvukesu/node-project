@@ -45,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: elvisvukesu/node-app:$${{ env.Version }}
+          tags: elvisvukesu/node-app:${{ env.Version }}
 
 
